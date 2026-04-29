@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>XE NÂNG HÀN QUỐC</title>
+    <title>XE NÂNG HÀN QUỐC - NHẬP KHẨU CHÍNH HÃNG</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -25,14 +25,13 @@
 
         .products {
             display: flex;
+            flex-direction: column;
             gap: 20px;
-            flex-wrap: wrap;
         }
 
         .card {
             background: #fff;
-            flex: 1;
-            min-width: 300px;
+            width: 100%;
             padding: 20px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -50,14 +49,14 @@
 
         .gallery {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             gap: 8px;
             margin-top: 10px;
         }
 
         .gallery img {
             width: 100%;
-            height: 120px;
+            height: 280px;
             object-fit: cover;
             border-radius: 8px;
         }
@@ -99,8 +98,12 @@
         }
 
         @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
             .gallery img {
-                height: 100px;
+                height: 180px;
             }
         }
     </style>
@@ -114,7 +117,6 @@
 
     <div class="products">
 
-        <!-- DOOSAN -->
         <div class="card">
             <h3>XE NÂNG DOOSAN <span class="hot">HOT</span></h3>
             <p><b>Model:</b> B30NS</p>
@@ -128,11 +130,10 @@
                 <img src="images/xenang1.jpg">
                 <img src="images/xenang2.jpg">
                 <img src="images/xenang3.jpg">
-             </div>
-             </div>
+            </div>
+        </div>
 
-        <!-- BOBCAT -->
-<div class="card">
+        <div class="card">
             <h3>XE NÂNG BOBCAT</h3>
             <p><b>Model:</b> B30NS</p>
             <p><b>Tải trọng:</b> 3 tấn</p>
@@ -142,10 +143,9 @@
             <p>✔ Giao hàng nhanh</p>
 
             <div class="gallery">
-                <img src="images/xenang6.jpg">
                 <img src="images/xenang4.jpg">
                 <img src="images/xenang5.jpg">
-                
+                <img src="images/xenang6.jpg">
             </div>
         </div>
 
